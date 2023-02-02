@@ -12,15 +12,19 @@
 <body>
     <div>
         <div>
-            <header class="header-flex">
-                <div class="container">
-                    <img class="imagen-h" src="assets/media/Logo.png" alt="logo">
+            <header>
+                <div class="logo">
+                    <img class="logo-img1" src="assets/media/Logo.png" alt="logo">
+                    <h1 class="logo-nombre">Proyecto CRUD</h1>
                 </div>
-                <div>
-                    <h1 class="text">Proyecto CRUD</h1>
-                </div>
+                    <nav>
+                        <a href="#" class="nav-link">Inicio</a>
+                        <a href="#" class="nav-link">Sobre Nosotros</a>
+                        <a href="#" class="nav-link">Contacto</a>
+                    </nav>
             </header>
         </div>
+        <br>
         <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
         <div class="tablas">
             <table class="tabla" id="tabla">
