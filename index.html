@@ -8,136 +8,130 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Proyecto 2 CRUD</title>
 </head>
+
 <body>
-<div>
     <div>
-        <header class="header-grid">
-            <div class="container">
-                <img class ="imagen-h" src="assets/images/Logo.png" alt="logo">
-            </div>
-            <div>
-                <h1 class="text">Proyecto CRUD</h1>
-            </div>
-        </header>
-    </div>
+        <div>
+            <header class="header-flex">
+                <div class="container">
+                    <img class="imagen-h" src="assets/media/Logo.png" alt="logo">
+                </div>
+                <div>
+                    <h1 class="text">Proyecto CRUD</h1>
+                </div>
+            </header>
+        </div>
+        <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+        <div class="tablas">
+            <table class="tabla" id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Pais</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-    <div class="container-crud">
-        <form>
-            <ul>
-                <li>
-                    <label for="name"> Nombre: </label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-
-                <li>
-
-                    <label for="mail"> Mail: </label>
-                    <input type="text" id="mail" name="user_mail">
-                </li>
-
-                <li>
-
-                    <label for="telefono"> telefono: </label>
-                    <input type="text" id="telefono" name="user_telefono">
-                </li>
-
-                <li>
-
-                    <label for="ciudad"> Ciudad: </label>
-                    <input type="text" id="ciudad" name="user_ciudad">
-                </li>
-
-                <li>
-
-                    <label for="estado"> Estado: </label>
-                    <input type="text" id="estado" name="user_estado">
-                </li>
-
-                <li>
-
-                    <label for="mascota"> Mascota: </label>
-                    <input type="text" id="mascota" name="user_mascota">
-                </li>
-            </ul>
-
-        <script src="assets/js/index.js"></script>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="caja">
+            <label for="nom">Nombre</label> <input type="text" id="nom" placeholder="Escriba aqui" required>
+            <label for="ape">Apellido</label> <input type="text" id="ape" placeholder="Escriba aqui" required>
+            <label for="pais">País</label> <input type="text" id="pais" placeholder="Escriba aqui" required>
+        </div>
+        <br />
+        <input class="submit" type="submit" value="Escribir">
         </form>
+        <br>
+        <br>
     </div>
 
 
-<footer>
-    
-    <section class="ft-main">
-        <div class="ft-main-item">
-            <h2 class="ft-title">Conocenos</h2>
-            <ul>
-                <li><a href="#">Quienes Somos</a></li>
-                <li><a href="#">Informacion Corporativa</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-        <div class="ft-main-item">
-            <h2 class="ft-title">Ayudamos a tu negocio</h2>
-            <ul>
-                <li><a href="#">Programa de afiliados</a></li>
-                <li><a href="#">Registra tu fundacion</a></li>
-            </ul>
-        </div>
-        <div class="ft-main-item">
-            <h2 class="ft-title">Categorias</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registrate</a></li>
-                <li><a href="#">Crear Expediente</a></li>
-                <li><a href="#">Cuidado para tu mascota</a></li>
-                <li><a href="#">Adopcion</a></li>
-                <li><a href="#">Hero Alert</a></li>
-            </ul>
-        </div>
-        <div class="ft-main-item">
-            <h2 class="ft-title">NEWSLETTER</h2>
-            <p>Recibe todas nuestras novedades en correo</p>
-            <form>
-                <input type="email" name="email" placeholder="Enter email address">
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer social -->
-    <section class="ft-social">
-        <ul class="ft-social-list">
-            <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-            <img class="network-img" src="assets/Media/Facebook.png" alt="fb"></a>
-            </li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <img class="network-img" src="assets/Media/Instagram.png" alt="ig"></a>
-            </li>
-            <li><a href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer">
-                <img class="network-img" src="assets/Media/Tik Tok.png" alt="tt"></a>
-            </li>
-            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <img class="network-img" src="assets/Media/twitter.png" alt="tw"></a>
-            </li>
-        </ul>
-    </section>
+        <!-- <script src="assets/js/index.js"></script> -->
 
-    <!-- Footer legal -->
-    <section class="ft-legal">
-        <div class="logoimg-wrapper">
-            <a href="index.html" target="_blank" rel="noopener noreferrer">
-                <img class="logo-img" src="assets/Media/Logo.png" alt="logof">
-            </a>
-        </div>
-        <ul class="ft-legal-list">
-            <li><a href="#">Condiciones &amp; Aviso de Privacidad</a></li>
-            <li>&copy; 2023 / Kaniltazo para Ucamp Proyecto 1</li>
-        </ul>
-    </section>
 
-</footer>
-</div>
+
+
+        <footer>
+
+            <section class="ft-main">
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Conocenos</h2>
+                    <ul>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Informacion Corporativa</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Ayudamos a tu negocio</h2>
+                    <ul>
+                        <li><a href="#">Programa de afiliados</a></li>
+                        <li><a href="#">Registra tu fundacion</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Categorias</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Registrate</a></li>
+                        <li><a href="#">Crear Expediente</a></li>
+                        <li><a href="#">Cuidado para tu mascota</a></li>
+                        <li><a href="#">Adopcion</a></li>
+                        <li><a href="#">Hero Alert</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">NEWSLETTER</h2>
+                    <p>Recibe todas nuestras novedades en correo</p>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter email address">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer social -->
+            <section class="ft-social">
+                <ul class="ft-social-list">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="network-img" src="assets/Media/Facebook.png" alt="fb"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="network-img" src="assets/Media/Instagram.png" alt="ig"></a>
+                    </li>
+                    <li><a href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer">
+                            <img class="network-img" src="assets/Media/Tik Tok.png" alt="tt"></a>
+                    </li>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="network-img" src="assets/Media/twitter.png" alt="tw"></a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Footer legal -->
+            <section class="ft-legal">
+                <div class="logoimg-wrapper">
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">
+                        <img class="logo-img" src="assets/Media/Logo.png" alt="logof">
+                    </a>
+                </div>
+                <ul class="ft-legal-list">
+                    <li><a href="#">Condiciones &amp; Aviso de Privacidad</a></li>
+                    <li>&copy; 2023 / Kaniltazo para Ucamp Proyecto 2 CRUD</li>
+                </ul>
+            </section>
+
+        </footer>
+    </div>
 </body>
+
 </html>
