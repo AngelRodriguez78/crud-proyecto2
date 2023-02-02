@@ -43,6 +43,14 @@ html{
     font-family: 'Hind Madurai', sans-serif;
 }
 
+/*Iniciamos con la estructura del CRUD*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 label {
     display: flex;
     font: 1rem 'Hind Madurai', sans-serif;
@@ -59,4 +67,64 @@ input {
     text-align: center;
     justify-content: center;
     align-self: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+/* Diseñando el footer */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #4EBFBF;
+    color: #223D40;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: #223D40;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ft-title {
+    color: #223D40;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    /* same as flex-grow: 1; */
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem
+        /*200px*/
+    ;
 }
