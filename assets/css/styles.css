@@ -1,24 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Hind Madurai', sans-serif;
-}
 
-/* html{
+
+html {
     height: 100%;
-} */
-body{
+}
+
+body {
     font-family: 'Hind Madurai', sans-serif;
     margin: 0;
 }
 
-
-header{
+header {
     display: flex;
     min-height: 70px;
-    background-color:#4EBFBF;
+    background-color: #4EBFBF;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -29,37 +25,156 @@ header{
     align-items: center;
 }
 
-.logo-img1{
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    color: #223D40;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.logo-img1 {
     height: 50px;
     margin-right: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
+    color: #223D40;
+    font-family: 'Hind Madurai', sans-serif;
 }
 
-nav a{
+nav a {
     font-weight: 600;
     padding-right: 10px;
+    text-align: right;
 }
 
-nav a:hover{
+nav a:hover {
     color: aliceblue;
 
-@media (max-width:700){
-    header{
-        flex-direction: column;
-    }
+    @media (max-width:720px) {
+        header {
+            flex-direction: column;
+        }
 
-    nav{
-        padding: 10px 0px;
+        nav {
+            padding: 10px 0px;
+        }
     }
 }
+/*comienza la tabla*/
+
+.tabla-crud{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4EBFBF;
 
 }
 
-/* 
+.container {
+    border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+table {
+    display: flex;
+    color:#223D40;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgba(243, 140, 210, 0.4);
+}
+
+th {
+    padding: 20px 15px ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: solid 5px rgba(255, 255, 255, 0.2);
+}
+
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: rgba(243, 103, 199, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
 .header-grid{
     padding: 10px;
     display: grid;
@@ -91,8 +206,8 @@ nav a:hover{
     font-family: 'Hind Madurai', sans-serif;
 } */
 
-/*Iniciamos con estilo del CRUD*/
-
+    /*Iniciamos con estilo del CRUD*/
+    /* 
 form {
     display: flex;
     flex-wrap: wrap;
@@ -120,19 +235,19 @@ input {
 ul {
     list-style: none;
     padding-left: 0;
-}
+} */
 
-/* stilo para tabla*/
-
+    /* stilo para tabla*/
+    /* 
 form{
     text-align: center;
 }
 .tablas{
     display: inline-block;    
-}
-/*Tablaaaaaa Estilos*/
-.tabla{
-border-collapse: collapse; /*Esta propiedad hace que parezca mas una tabla*/
+} */
+    /*Tablaaaaaa Estilos*/
+    /* .tabla{
+border-collapse: collapse; 
 font-family: 'Quicksand', sans-serif;
 }
 table tr th{
@@ -141,7 +256,7 @@ table tr th{
     height: 25px;
     color: white;
     background-color: #00438D;
-}
+} */
 
 
 
@@ -149,9 +264,9 @@ table tr th{
 
 
 
-/* Diseñando el footer */
+    /* Diseñando el footer */
 
-ul {
+    /* ul {
     list-style: none;
     padding-left: 0;
 }
@@ -201,6 +316,7 @@ body {
         /*200px*/
     ;
 }
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +355,7 @@ input[type="submit"] {
 
 .ft-legal {
     padding: 0.9375rem 1.875rem;
-    background-color:black;
+    background-color: black;
 }
 
 .ft-legal-list {
@@ -277,3 +393,5 @@ input[type="submit"] {
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
 }
+
+*/
