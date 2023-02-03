@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     height: 100%;
+    background-color: #4EBFBF;
 }
 
 body {
@@ -63,13 +66,14 @@ nav a:hover {
         }
     }
 }
+
 /*comienza la tabla*/
 
-.tabla-crud{
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.tabla-crud {
     background-color: #4EBFBF;
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
 
 }
 
@@ -78,26 +82,30 @@ nav a:hover {
 }
 
 table {
-    display: flex;
-    color:#223D40;
+    color: #223D40;
     font-size: 14px;
-    table-layout: fixed;
+    table-layout: auto;
     border-collapse: collapse;
+
 }
 
 thead {
     background: rgba(243, 140, 210, 0.4);
+    font-weight: 700px;
 }
 
 th {
-    padding: 20px 15px ;
     font-weight: 700;
-    text-transform: uppercase;
+    padding: 5px 5px;
+    text-transform: full-width;
+    text-align: center;
 }
 
 td {
-    padding: 15px;
     border-bottom: solid 5px rgba(255, 255, 255, 0.2);
+    padding: 5px 5px;
+    text-transform: full-width;
+    text-align: center;
 }
 
 
@@ -106,167 +114,13 @@ tbody tr {
 }
 
 tbody tr:hover {
-    background: rgba(243, 103, 199, 0.4);
+    background: #777;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-.header-grid{
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 5 rem;
-}
-
-.container{
-    width: 150px;
-    height: 150px;
-}
-
-.imagen-h{
-    padding: 10px;
-    width: 100px;
-    height:100px;
-    object-fit: cover;
-    text-align: left;
-}
-
-.text {
-    padding: 4rem;
-    display:grid;
-    text-align: right;
-    align-self: right right;
-    font-size: 30px;
-    margin: auto;
-    color: #4EBFBF;
-    font-family: 'Hind Madurai', sans-serif;
-} */
-
-    /*Iniciamos con estilo del CRUD*/
-    /* 
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-label {
-    display: flex;
-    font: 1rem 'Hind Madurai', sans-serif;
-    color: #4EBFBF;
-    text-align: left;
-    justify-content: center;
-    align-self: center;
-}
-
-input {
-    margin: 0.4 rem 0;
-    border-radius: 1em;
-    border-color: #4EBFBF;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-}
+/* Diseñando el footer */
 
 ul {
-    list-style: none;
-    padding-left: 0;
-} */
-
-    /* stilo para tabla*/
-    /* 
-form{
-    text-align: center;
-}
-.tablas{
-    display: inline-block;    
-} */
-    /*Tablaaaaaa Estilos*/
-    /* .tabla{
-border-collapse: collapse; 
-font-family: 'Quicksand', sans-serif;
-}
-table tr th{
-    border: 1px solid #D5D9D9;
-    width: 100px;
-    height: 25px;
-    color: white;
-    background-color: #00438D;
-} */
-
-
-
-
-
-
-
-    /* Diseñando el footer */
-
-    /* ul {
     list-style: none;
     padding-left: 0;
 }
